@@ -1,8 +1,9 @@
 #include<pthread.h>
 #include<stdlib.h>
 #include<stdio.h>
+#include<unistd.h>
 
-#define N 2                                                     //storing number of threads in N
+int N = 2 ;                                               //storing number of threads in N
 
 int arr[] = {80,77,21,1,2,46,45,87,0,11,23};
 
