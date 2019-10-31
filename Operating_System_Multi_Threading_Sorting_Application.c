@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<unistd.h>
+#include<process.h>
 
 int N = 2 ;                                               //storing number of threads in N
 
@@ -79,4 +80,6 @@ void main()
         pthread_join(threadSorting, NULL);                                 
         for (int i = 0; i < 10; i++)
       	printf("%d\t", arr[i]);
+    printf("completed");
+    
 }
